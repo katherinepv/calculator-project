@@ -1,0 +1,153 @@
+@use "./variables" as *;
+
+// grid layout for input buttons
+
+.input {
+    display: grid;
+    grid-template-areas:
+        "c change percent divide"
+        "seven eight nine multiply"
+        "four five six subtract"
+        "one two three add"
+        "zero zero point equals";
+    grid-gap: 0.5rem;
+    width: 100vw;
+    padding: 0.5rem;
+    margin: auto;
+    // align-items: center;
+    // justify-items: center;
+
+    .input__clear {
+        grid-area: c;
+    }
+
+    .input__change-sign {
+        grid-area: change;
+    }
+
+    .input__percentage {
+        grid-area: percent;
+    }
+
+    .input__divide {
+        grid-area: divide;
+    }
+
+    .input__7 {
+        grid-area: seven;
+    }
+
+    .input__8 {
+        grid-area: eight;
+    }
+
+    .input__9 {
+        grid-area: nine;
+    }
+
+    .input__multiply {
+        grid-area: multiply;
+    }
+
+    .input__4 {
+        grid-area: four;
+    }
+
+    .input__5 {
+        grid-area: five;
+    }
+
+    .input__6 {
+        grid-area: six;
+    }
+
+    .input__subtract {
+        grid-area: subtract;
+    }
+
+    .input__1 {
+        grid-area: one;
+    }
+
+    .input__2 {
+        grid-area: two;
+    }
+
+    .input__3 {
+        grid-area: three;
+    }
+
+    .input__add {
+        grid-area: add;
+    }
+
+    .input__0 {
+        grid-area: zero;
+    }
+
+    .input__decimal-point {
+        grid-area: point;
+    }
+
+    .input__equals {
+        grid-area: equals;
+    }
+
+}
+
+// styling for operator buttons on 4th column
+
+.input__divide,
+.input__multiply,
+.input__subtract,
+.input__add {
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    background-color: $secondary-color;
+}
+
+// equals button
+.input__equals {
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    background-color: $tertiary-color;
+}
+
+
+// styling for numbers and decimal point
+.input__1,
+.input__2,
+.input__3,
+.input__4,
+.input__5,
+.input__6,
+.input__7,
+.input__8,
+.input__9,
+.input__decimal-point {
+    background-color: $primary-color;
+    border-radius: 1rem;
+    height: 6rem;
+    width: 6rem;
+}
+
+// styling for zero button
+.input__0 {
+    background-color: $primary-color;
+    border-radius: 1rem;
+    height: 6rem;
+    width: 12.5rem;
+}
+
+// styling for operation buttons on top row
+
+.input__clear,
+.input__change-sign,
+.input__percentage {
+    border-radius: 1rem;
+    height: 6rem;
+    width: 6rem;
+    background-color: $secondary-color;
+}
