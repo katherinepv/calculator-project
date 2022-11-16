@@ -4,7 +4,19 @@
     width: 95vw;
     height: 14rem;
     margin: auto;
-    background-color: rgb(161, 231, 207);
+    background-color: $primary-background-color;
     border-style: solid;
-    border-color: rgb(9, 75, 53);
+    border-color: $primary-color;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: end;
+
+    .display__calculation {
+        font-size: 1rem;
+    }
+
+    .display__answer {
+        font-size: 3rem;
+    }
 }

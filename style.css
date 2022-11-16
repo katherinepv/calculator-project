@@ -1,10 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap");
 .display {
   width: 95vw;
   height: 14rem;
   margin: auto;
-  background-color: rgb(161, 231, 207);
+  background-color: rgb(51, 50, 51);
   border-style: solid;
-  border-color: rgb(9, 75, 53);
+  border-color: #f9a12e;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: end;
+}
+.display .display__calculation {
+  font-size: 1rem;
+}
+.display .display__answer {
+  font-size: 3rem;
+}
+
+.input {
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
 }
 
 .input {
@@ -124,4 +141,6 @@
 
 body {
   background-color: rgb(51, 50, 51);
+  color: white;
+  font-family: "Orbitron", sans-serif;
 }/*# sourceMappingURL=style.css.map */
