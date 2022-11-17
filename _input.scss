@@ -22,7 +22,10 @@ button {
     grid-gap: 0.5rem 0.5rem;
     width: 95vw;
     padding: 0.5rem;
-    margin: auto;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: $primary-foreground-color;
+    background-color: $primary-foreground-color;
 
     .input__clear {
         grid-area: c;

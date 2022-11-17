@@ -2,20 +2,19 @@
 .display {
   width: 95vw;
   height: 14rem;
-  margin: auto;
-  background-color: rgb(51, 50, 51);
+  padding: 0.5rem;
+  background-color: rgb(50, 50, 50);
   border-style: solid;
-  border-color: #f9a12e;
+  border-color: rgb(50, 50, 50);
   border-radius: 1rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: end;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .display .display__calculation {
   font-size: 1rem;
 }
 .display .display__answer {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 button {
@@ -34,7 +33,10 @@ button {
   grid-gap: 0.5rem 0.5rem;
   width: 95vw;
   padding: 0.5rem;
-  margin: auto;
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: rgb(50, 50, 50);
+  background-color: rgb(50, 50, 50);
 }
 .input .input__clear {
   grid-area: c;
@@ -136,7 +138,7 @@ button {
 }
 
 body {
-  background-color: rgb(51, 50, 51);
+  background-color: rgb(45, 44, 45);
   color: white;
   font-family: "Orbitron", sans-serif;
 }/*# sourceMappingURL=style.css.map */
