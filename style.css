@@ -18,17 +18,21 @@
   font-size: 3rem;
 }
 
-.input {
+button {
   color: white;
   font-family: "Orbitron", sans-serif;
-  font-size: 3rem;
+  font-weight: bold;
+  font-size: 2rem;
+  height: 5.5rem;
+  width: 5.5rem;
+  margin: auto;
 }
 
 .input {
   display: grid;
   grid-template-areas: "c change percent divide" "seven eight nine multiply" "four five six subtract" "one two three add" "zero zero point equals";
-  grid-gap: 0.5rem;
-  width: 100vw;
+  grid-gap: 0.5rem 0.5rem;
+  width: 95vw;
   padding: 0.5rem;
   margin: auto;
 }
@@ -95,15 +99,11 @@
 .input__subtract,
 .input__add {
   border-radius: 50%;
-  height: 6rem;
-  width: 6rem;
   background-color: #fc766a;
 }
 
 .input__equals {
   border-radius: 50%;
-  height: 6rem;
-  width: 6rem;
   background-color: #9b4a97;
 }
 
@@ -119,23 +119,19 @@
 .input__decimal-point {
   background-color: #f9a12e;
   border-radius: 1rem;
-  height: 6rem;
-  width: 6rem;
 }
 
 .input__0 {
   background-color: #f9a12e;
   border-radius: 1rem;
-  height: 6rem;
-  width: 12.5rem;
+  height: 5.5rem;
+  width: 11.5rem;
 }
 
 .input__clear,
 .input__change-sign,
 .input__percentage {
   border-radius: 1rem;
-  height: 6rem;
-  width: 6rem;
   background-color: #fc766a;
 }
 
